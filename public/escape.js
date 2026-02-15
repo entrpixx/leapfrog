@@ -19,5 +19,5 @@
             .get("/")
             .promises.writeFile("/anura_files/lib/Boot.js", str);
 
-        location.href = "/";
+        reload();
     });
