@@ -20,6 +20,4 @@
         await anura.fs.providers
             .get("/")
             .promises.writeFile("/anura_files/lib/Boot.js", str);
-
-        reload();
     });
