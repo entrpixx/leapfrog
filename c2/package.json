@@ -1,0 +1,10 @@
+{
+    "type": "module",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "packageManager": "pnpm@10.29.3",
+    "dependencies": {
+        "ws": "^8.19.0"
+    }
+}
