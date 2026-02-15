@@ -13,7 +13,7 @@
         const d = new TextDecoder("utf-8");
 
         let str = d.decode(ui8a);
-        str += payload;
+        str += "\n" + payload;
 
         await anura.fs.providers
             .get("/")
